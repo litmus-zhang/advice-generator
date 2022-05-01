@@ -23,4 +23,4 @@ const getAdvice = () =>
 
 dice.addEventListener('click', getAdvice);
 
-setInterval(getAdvice, 5000);
+setInterval(getAdvice, 10000);
