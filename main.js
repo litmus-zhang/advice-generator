@@ -21,6 +21,9 @@ const getAdvice = () =>
     
 }
 
-dice.addEventListener('click', getAdvice);
-
-setInterval(getAdvice, 10000);
+dice.addEventListener('click', function ()
+{ 
+    var interval = setInterval(getAdvice, 10000);
+    getAdvice();
+    clearInterval(interval);
+});
